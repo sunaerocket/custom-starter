@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es5", // 컴파일 결과물이 어느 버전의 ECMAscript를 따를 것인가
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // 컴파일 시 어떤 javascript 내장 API들을 포함할 것인가
+    "module": "esnext", // 모듈 시스템. import/export 코드가 어떤 방식으로 컴파일될 것인가
+    "allowJs": true, // js 파일을 허용할 것인가
+    "jsx": "react", // jsx 코드를 어떻게 컴파일 할 것인가
+    "baseUrl": "./", // 모듈을 비상대적 방식으로 import 할 경우 기준 경로
+    "moduleResolution": "Node", // 어떤 모듈 해석 방식을 택할 것인가
+    "sourceMap": true, // map 파일을 생성할 것인가
+    "esModuleInterop": true, // 컴파일 단계에서 es6 모듈 호환을 돕는 헬퍼 함수를 사용할 것인가
+    "strict": true, // strict family 속성 전부를 true로 할 것인가
+    "noImplicitAny": true, // any 타입을 오류 처리 할 것인가
+    "isolatedModules": false, // 다른 트랜스파일러(ex: babel)와 호환을 위해 한번에 하나의 파일만 컴파일할 것인가
+    "forceConsistentCasingInFileNames": true, // 파일명을 식별할 때 대소문자 구분을 할 것인가
+    "declaration": false, // d.ts 파일을 생성할 것인가
+    "removeComments": true, // 컴파일시 주석을 제거할 것인가
+    "pretty": true, // 오류 메시지에 스타일을 적용할 것인가
+    "skipLibCheck": true, // 모든 선언 파일(*.d.ts) 타입 검사를 건너뛸 것인가
+    "noImplicitThis": true, // any 타입으로 암시한 this 표현식을 오류 처리할 것인가
+    "noFallthroughCasesInSwitch": true, // switch문의 fallthrough case를 오류 처리할 것인가
+    "noImplicitReturns": true, // 출력값이 void가 아닌 함수가 출력이 없는 경우 오류 처리할 것인가
+    "noEmit": true, // 컴파일 결과물을 파일로 만들지 않을 것인가
+    "noEmitOnError": true, // 컴파일 오류가 발생하면 결과물을 생성하지 않을 것인가
+    "noUnusedLocals": false, // 미사용 지역 변수에 대한 오류를 낼 것인가
+    "downlevelIteration": true, // ES5, ES3 대상으로 스프레드, 구조분해할당 이터레이션 지원할 것인가
+    "importHelpers": true // tslib 헬퍼를 사용하여 빌드 결과물의 용량을 줄일 것인가
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
