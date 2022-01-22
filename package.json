@@ -1,7 +1,6 @@
 {
   "name": "custom-boilerplate",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "sunaerocket <sunaerocket@gmail.com>",
   "license": "MIT",
   "scripts": {
